@@ -54,7 +54,7 @@ public class Anfibio extends Animal {
 		venenoso = estado;
 	}
 	
-	public boolean getVenenoso() {
+	public boolean isVenenoso() {
 		return venenoso;
 	}
 }
