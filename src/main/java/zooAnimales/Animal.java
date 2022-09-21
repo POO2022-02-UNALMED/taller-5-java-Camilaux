@@ -11,7 +11,7 @@ public class Animal {
 	private int edad;
 	private String habitat;
 	private String genero;
-	private ArrayList<Zona> zona;
+	private ArrayList<Zona> zona = new ArrayList<Zona>() ;
 	
 	public Animal() {
 		
@@ -28,10 +28,11 @@ public class Animal {
 		return "desplazarse";
 	}
 	
-	public String totalPorTipo() {
-		return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() +
-		"\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() +
-		"\nAnfibios: " + Anfibio.cantidadAnfibios();
+	public static String totalPorTipo() {
+		String texto = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() +
+				"\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() +
+				"\nAnfibios: " + Anfibio.cantidadAnfibios();
+		return texto;
 	}
 	
 	public void setTotalAnimales(int totalAnimales) {
@@ -74,10 +75,21 @@ public class Animal {
 		return genero;
 	}
 	
+	public ArrayList<Zona> getZona() {
+		return zona;
+	}
+	
 	public String toString() {
-		String cadena = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat +
-				" y mi genero es " + genero + ", la zona en la que me ubico es " + zona + ", en el " + Zoologico.getNombre();
-		return cadena;
+		if(getZona() != null) {
+			String cadena = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat +
+					" y mi genero es " + genero + ", la zona en la que me ubico es " + getZona() + ", en el " + getNombre();
+			return cadena;
+		}
+		else {
+			String cadena = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat +
+					" y mi genero es " + genero;
+			return cadena;
+		}
 	}
 
 }
