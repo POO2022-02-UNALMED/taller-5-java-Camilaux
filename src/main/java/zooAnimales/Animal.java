@@ -3,7 +3,6 @@ package zooAnimales;
 import java.util.ArrayList;
 
 import gestion.Zona;
-import gestion.Zoologico;
 
 public class Animal {
 	private int totalAnimales;
