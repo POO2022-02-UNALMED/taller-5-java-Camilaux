@@ -80,7 +80,7 @@ public class Animal {
 	}
 	
 	public String toString() {
-		if(getZona() != null) {
+		if(getZona().size() != 0) {
 			String cadena = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat +
 					" y mi genero es " + genero + ", la zona en la que me ubico es " + getZona() + ", en el " + getNombre();
 			return cadena;
