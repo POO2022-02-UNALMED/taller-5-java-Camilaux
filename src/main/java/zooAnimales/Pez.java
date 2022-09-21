@@ -23,7 +23,7 @@ public class Pez extends Animal {
 	}
 	
 	public static int cantidadPeces() {
-		return salmones + bacalaos;
+		return listado.size();
 	}
 	
 	public String movimiento() {
