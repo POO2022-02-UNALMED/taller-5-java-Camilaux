@@ -19,6 +19,7 @@ public class Mamifero extends Animal {
 		setGenero(genero);
 		pelaje = estado;
 		this.patas = patas;
+		listado.add(this);
 	}
 	
 	public static int cantidadMamiferos() {

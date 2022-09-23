@@ -18,6 +18,7 @@ public class Ave extends Animal {
 		setHabitat(habitat);
 		setGenero(genero);
 		colorPlumas = color;
+		listado.add(this);
 	}
 	
 	public static int cantidadAves() {
