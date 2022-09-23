@@ -85,23 +85,23 @@ public class Animal {
 	}
 	
 	public static void setTotalMamifero(int n) {
-		totalMamifero += n;
+		Animal.totalMamifero += n;
 	}
 	
 	public static void setTotalAnfibio(int n) {
-		totalAnfibio += n;
+		Animal.totalAnfibio += n;
 	}
 	
 	public static void setTotalAve(int n) {
-		totalAve += n;
+		Animal.totalAve += n;
 	}
 	
 	public static void setTotalPez(int n) {
-		totalPez += n;
+		Animal.totalPez += n;
 	}
 	
 	public static void setTotalReptil(int n) {
-		totalReptil += n;
+		Animal.totalReptil += n;
 	}
 	
 	public static int getTotalReptil() {
