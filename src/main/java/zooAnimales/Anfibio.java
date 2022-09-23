@@ -20,7 +20,7 @@ public class Anfibio extends Animal {
 		setGenero(genero);
 		colorPiel = color;
 		venenoso = estado;
-		listado.add(this);
+		setTotalAnfibio(1);
 	}
 	
 	public static int cantidadAnfibios() {

@@ -6,6 +6,11 @@ import gestion.Zona;
 
 public class Animal {
 	private int totalAnimales;
+	private static int totalMamifero;
+	private static int totalAve;
+	private static int totalAnfibio;
+	private static int totalReptil;
+	private static int totalPez;
 	private String nombre;
 	private int edad;
 	private String habitat;
@@ -29,9 +34,9 @@ public class Animal {
 	}
 	
 	public static String totalPorTipo() {
-		String texto = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + "Aves: " + Ave.cantidadAves() +
-				"\n" + "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces() +
-				"\n" + "Anfibios: " + Anfibio.cantidadAnfibios();
+		String texto = "Mamiferos: " + getTotalMamifero() + "\n" + "Aves: " + getTotalAve() +
+				"\n" + "Reptiles: " + getTotalReptil() + "\n" + "Peces: " + getTotalPez() +
+				"\n" + "Anfibios: " + getTotalAnfibio();
 		return texto;
 	}
 	
@@ -77,6 +82,46 @@ public class Animal {
 	
 	public ArrayList<Zona> getZona() {
 		return zona;
+	}
+	
+	public static void setTotalMamifero(int n) {
+		totalMamifero += n;
+	}
+	
+	public static void setTotalAnfibio(int n) {
+		totalAnfibio += n;
+	}
+	
+	public static void setTotalAve(int n) {
+		totalAve += n;
+	}
+	
+	public static void setTotalPez(int n) {
+		totalPez += n;
+	}
+	
+	public static void setTotalReptil(int n) {
+		totalReptil += n;
+	}
+	
+	public static int getTotalReptil() {
+		return totalReptil;
+	}
+	
+	public static int getTotalMamifero() {
+		return totalMamifero;
+	}
+	
+	public static int getTotalAve() {
+		return totalAve;
+	}
+	
+	public static int getTotalPez() {
+		return totalPez;
+	}
+	
+	public static int getTotalAnfibio() {
+		return totalAnfibio;
 	}
 	
 	public String toString() {
