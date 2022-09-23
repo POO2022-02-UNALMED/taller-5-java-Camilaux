@@ -20,7 +20,8 @@ public class Pez extends Animal {
 		setGenero(genero);
 		colorEscamas = color;
 		cantidadAletas = aletas;
-		setTotalPez(1);
+		listado.add(this);
+		//setTotalPez(1);
 	}
 	
 	public static int cantidadPeces() {
