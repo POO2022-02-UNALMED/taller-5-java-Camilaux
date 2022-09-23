@@ -21,6 +21,7 @@ public class Animal {
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
+		totalAnimales ++;
 	}
 	
 	public String movimiento() {
@@ -28,9 +29,9 @@ public class Animal {
 	}
 	
 	public static String totalPorTipo() {
-		String texto = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() +
-				"\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() +
-				"\nAnfibios: " + Anfibio.cantidadAnfibios();
+		String texto = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + "Aves: " + Ave.cantidadAves() +
+				"\n" + "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces() +
+				"\n" + "Anfibios: " + Anfibio.cantidadAnfibios();
 		return texto;
 	}
 	
