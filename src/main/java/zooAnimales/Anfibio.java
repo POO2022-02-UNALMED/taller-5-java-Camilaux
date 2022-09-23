@@ -10,6 +10,7 @@ public class Anfibio extends Animal {
 	private boolean venenoso;
 	
 	public Anfibio() {
+		this(null,-1,null,null,null,false);
 		
 	}
 	

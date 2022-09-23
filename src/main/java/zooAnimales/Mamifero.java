@@ -10,6 +10,7 @@ public class Mamifero extends Animal {
 	private int patas;
 	
 	public Mamifero() {
+		this(null,-1,null,null,false, -1);
 	}
 	
 	public Mamifero(String nombre, int edad, String habitat, String genero, boolean estado, int patas) {

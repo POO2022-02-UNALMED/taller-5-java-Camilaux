@@ -10,7 +10,7 @@ public class Reptil extends Animal {
 	private int largoCola;
 	
 	public Reptil() {
-		
+		this(null,-1,null,null,null,-1);
 	}
 	
 	public Reptil(String nombre, int edad, String habitat, String genero, String color, int largo) {
