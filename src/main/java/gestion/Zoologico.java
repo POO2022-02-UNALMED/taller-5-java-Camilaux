@@ -8,7 +8,7 @@ public class Zoologico {
 	private static ArrayList<Zona> zonas = new ArrayList<Zona>();
 	
 	public Zoologico() {
-		
+		this(null,null);
 	}
 	
 	public Zoologico(String nom, String ubi) {

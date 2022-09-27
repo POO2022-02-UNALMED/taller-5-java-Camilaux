@@ -6,16 +6,11 @@ import gestion.Zona;
 
 public class Animal {
 	private int totalAnimales;
-	private static int totalMamifero;
-	private static int totalAve;
-	private static int totalAnfibio;
-	private static int totalReptil;
-	private static int totalPez;
 	private String nombre;
 	private int edad;
 	private String habitat;
 	private String genero;
-	private ArrayList<Zona> zona = new ArrayList<>() ;
+	private ArrayList<Zona> zona = new ArrayList<Zona>() ;
 	
 	public Animal() {
 		this(null,0,null,null);
@@ -82,46 +77,6 @@ public class Animal {
 	
 	public ArrayList<Zona> getZona() {
 		return zona;
-	}
-	
-	public static void setTotalMamifero(int n) {
-		Animal.totalMamifero += n;
-	}
-	
-	public static void setTotalAnfibio(int n) {
-		Animal.totalAnfibio += n;
-	}
-	
-	public static void setTotalAve(int n) {
-		Animal.totalAve += n;
-	}
-	
-	public static void setTotalPez(int n) {
-		Animal.totalPez += n;
-	}
-	
-	public static void setTotalReptil(int n) {
-		Animal.totalReptil += n;
-	}
-	
-	public static int getTotalReptil() {
-		return totalReptil;
-	}
-	
-	public static int getTotalMamifero() {
-		return totalMamifero;
-	}
-	
-	public static int getTotalAve() {
-		return totalAve;
-	}
-	
-	public static int getTotalPez() {
-		return totalPez;
-	}
-	
-	public static int getTotalAnfibio() {
-		return totalAnfibio;
 	}
 	
 	public String toString() {
